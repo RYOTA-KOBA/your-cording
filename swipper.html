@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="swipper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Swiper START -->
+    <div class="swiper-container">
+        <!-- メイン表示部分 -->
+        <div class="swiper-wrapper">
+            <!-- 各スライド -->
+            <div class="swiper-slide">
+                <img src="img/digital-marketing-1433427_1280-1.png" alt="">
+                <div class="swiper-text">
+                    <h4>株式会社サンプル様採用サイトのコーディングを行いました！</h4>
+                    <p>採用技術：jQuery,Bootstrap4<br> 実装期間：2週間<br> 担当コーダー：石井</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/digital-marketing-1433427_1280-1.png" alt="">
+                <div class="swiper-text">
+                    <h4>株式会社サンプル様採用サイトのコーディングを行いました！</h4>
+                    <p>採用技術：jQuery,Bootstrap4<br> 実装期間：2週間<br> 担当コーダー：石井</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/digital-marketing-1433427_1280-1.png" alt="">
+                <div class="swiper-text">
+                    <h4>株式会社サンプル様採用サイトのコーディングを行いました！</h4>
+                    <p>採用技術：jQuery,Bootstrap4<br> 実装期間：2週間<br> 担当コーダー：石井</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper END -->
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+    autoplay: {
+        delay: 5000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        reverseDirection: false
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true
+	},
+    loop: true,
+    slidesPerView: 4,
+    centeredSlides : true,
+    spaceBetween: 40,
+    centeredSlides : true,
+});
+</script>
+<!-- 
+
+Swiperが動作しなかったのはCDNのスクリプトの読み込み位置の問題。
+bodyのラストにかくと、その前に記述したswiperの<script>が読み込まれる前に実行されてエラーになる
+つまり、bodyの最後にswiper関連の関数を書くのであれば、min.jsのCDNもmin.css同様にheadタグ内に
+入れてしまえばOK
+
+
+
+ -->
+
+</body>
+</html>

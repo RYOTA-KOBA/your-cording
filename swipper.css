@@ -1,0 +1,35 @@
+/* 全体のスタイル */
+.swiper-container{
+    width: 100%;
+}
+.swiper-wrapper {
+	width: 322px !important;
+	height: 407px;
+}
+/* 全スライド共通スタイル */
+.swiper-slide {
+	width: 322px !important;
+    height: 407px;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+}
+.swiper-slide img{
+    width: 322px;
+}
+.swiper-text{
+    width: 90%;
+    margin-left: 20px;
+}
+.swiper-text h4,
+.swiper-text p{
+    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.swiper-text h4{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.swiper-text p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
